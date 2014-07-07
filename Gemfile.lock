@@ -26,7 +26,15 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    better_errors (1.1.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     builder (3.1.4)
+    callsite (0.0.11)
+    coderay (1.1.0)
+    debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.2.1)
     hike (1.2.3)
@@ -38,11 +46,19 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta_request (0.3.3)
+      callsite (~> 0.0, >= 0.0.11)
+      rack-contrib (~> 1.1)
+      railties (>= 3.0.0, < 5.0.0)
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.10.1)
     polyglot (0.3.5)
+    quiet_assets (1.0.3)
+      railties (>= 3.1, < 5.0)
     rack (1.5.2)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.0.5)
@@ -95,7 +111,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors
+  binding_of_caller
   jquery-rails (= 3.1.1)
+  meta_request
+  quiet_assets
   rails (= 4.0.5)
   sass-rails (~> 4.0.2)
   sdoc

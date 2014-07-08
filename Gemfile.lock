@@ -10,6 +10,8 @@ GEM
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
+    active_model_serializers (0.8.1)
+      activemodel (>= 3.0)
     activemodel (4.0.5)
       activesupport (= 4.0.5)
       builder (~> 3.1.0)
@@ -26,6 +28,10 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    barber (0.4.2)
+      ember-source
+      execjs
+      handlebars-source
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -35,8 +41,22 @@ GEM
     callsite (0.0.11)
     coderay (1.1.0)
     debug_inspector (0.0.2)
+    ember-data-source (0.14)
+      ember-source
+    ember-rails (0.14.1)
+      active_model_serializers
+      barber (>= 0.4.1)
+      ember-data-source
+      ember-source
+      execjs (>= 1.2)
+      handlebars-source
+      jquery-rails (>= 1.0.17)
+      railties (>= 3.1)
+    ember-source (1.3.1.1)
+      handlebars-source (~> 1.2.1)
     erubis (2.7.0)
     execjs (2.2.1)
+    handlebars-source (1.2.1)
     hike (1.2.3)
     i18n (0.6.9)
     jquery-rails (3.1.1)
@@ -113,6 +133,8 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
+  ember-rails (~> 0.14.1)
+  ember-source (~> 1.3.1.1)
   jquery-rails (= 3.1.1)
   meta_request
   quiet_assets

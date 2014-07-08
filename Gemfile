@@ -45,6 +45,10 @@ end
 group :test, :development do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
+  gem 'growl'
+  gem 'guard-rspec'
+  gem 'guard-teaspoon'
+  gem 'teaspoon', '~> 0.7.9'
 end
 
 # Use ActiveModel has_secure_password
